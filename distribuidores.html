@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width,initial-scale=1.0,maximum-scale=1"
+		/>
+		<!-- title -->
+		<title>Distribuidores - Conoce donde comprar nuestros productos.</title>
+		<meta name="description" content="lgdescription" />
+		<meta name="keywords" content="lgkeywords" />
+		<meta name="author" content="lgauthor" />
+		<!-- favicon -->
+		<link rel="shortcut icon" href="images/icon/ico-gallo.png" />
+		<!-- animation -->
+		<link rel="stylesheet" href="css/animate.css" />
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<!-- font-awesome icon -->
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<!-- themify-icons -->
+		<link rel="stylesheet" href="css/themify-icons.css" />
+		<!-- owl carousel -->
+		<link rel="stylesheet" href="css/owl.transitions.css" />
+		<link rel="stylesheet" href="css/owl.carousel.css" />
+		<!-- magnific popup -->
+		<link rel="stylesheet" href="css/magnific-popup.css" />
+		<!-- base -->
+		<link rel="stylesheet" href="css/base.css" />
+		<!-- elements -->
+		<link rel="stylesheet" href="css/elements.css" />
+		<!-- responsive -->
+		<link rel="stylesheet" href="css/responsive.css" />
+		<!--[if IE 9]>
+			<link rel="stylesheet" type="text/css" href="css/ie.css" />
+		<![endif]-->
+		<!--[if IE]>
+			<script src="js/html5shiv.min.js"></script>
+		<![endif]-->
+		<script
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtTWRMvPOp0QJ_u0IdGTHeNWxcOgCi1YA&callback=initMap"
+			async
+			defer
+		></script>
+		<style>
+			#map {
+				height: 500px;
+				/* width: 100%; */
+			}
+			#distributorsList {
+				max-height: 500px;
+				overflow-y: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="page" class="page">
+			<style>
+				section {
+					border-bottom: none !important;
+				}
+			</style>
+
+			<header class="header-black" id="header-section2">
+				<!-- nav -->
+				<nav
+					class="navbar  shrink-transparent-header-dark tz-header-bg no-margin alt-font dark-header shrink-header"
+					id="ui-id-6"
+				>
+					<div class="container navigation-menu">
+						<div class="row">
+							<!-- logo -->
+							<div class="col-md-3 col-sm-4 col-xs-9">
+								<a href="#home" class="inner-link"
+									><img
+										alt=""
+										src="images/uploads/logo_v3.png"
+										data-img-size="(W)163px X (H)40px"
+										id="ui-id-10"
+										style="
+											border-radius: 0px;
+											border-color: rgb(78, 78, 78);
+											border-style: none;
+											max-height: 150px;
+											border-width: 1px !important;
+										"
+								/></a>
+							</div>
+							<!-- end logo -->
+							<div class="col-md-9 col-sm-8 col-xs-3 position-inherit">
+								<button
+									data-target="#bs-example-navbar-collapse-1"
+									data-toggle="collapse"
+									class="navbar-toggle collapsed"
+									type="button"
+								>
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<div
+									id="bs-example-navbar-collapse-1"
+									class="collapse navbar-collapse pull-right"
+								>
+									<ul class="nav navbar-nav">
+										<li class="propClone">
+											<a
+												class="inner-link"
+												href="index.html"
+												style="
+													color: rgb(255, 255, 255);
+													background-color: rgba(0, 0, 0, 0);
+													border-color: rgb(255, 255, 255) rgb(255, 255, 255)
+														rgba(0, 0, 0, 0);
+													font-size: 15px;
+													font-weight: 700;
+													font-family: Montserrat, sans-serif;
+													text-transform: none;
+												"
+												id="ui-id-21"
+												>Inicio</a
+											>
+										</li>
+										<li class="propClone">
+											<a
+												class="inner-link"
+												href="alimentos.html"
+												style="
+													color: rgb(255, 255, 255);
+													background-color: rgba(0, 0, 0, 0);
+													border-color: rgb(255, 255, 255) rgb(255, 255, 255)
+														rgba(0, 0, 0, 0);
+													font-size: 15px;
+													font-weight: 700;
+													font-family: Montserrat, sans-serif;
+													text-transform: none;
+												"
+												id="ui-id-22"
+												>Nuestros<br />
+												Alimentos</a
+											>
+										</li>
+										<li class="propClone">
+											<a
+												class="inner-link"
+												href="tecnologia.html"
+												style="
+													color: rgb(255, 255, 255);
+													background-color: rgba(0, 0, 0, 0);
+													border-color: rgb(255, 255, 255) rgb(255, 255, 255)
+														rgba(0, 0, 0, 0);
+													font-size: 15px;
+													font-weight: 700;
+													font-family: Montserrat, sans-serif;
+													text-transform: none;
+												"
+												id="ui-id-23"
+												>Tecnología <br />avanzada</a
+											>
+										</li>
+										<li class="propClone">
+											<a
+												class="inner-link"
+												href="plan.html"
+												style="
+													color: rgb(255, 255, 255);
+													background-color: rgba(0, 0, 0, 0);
+													border-color: rgb(255, 255, 255) rgb(255, 255, 255)
+														rgba(0, 0, 0, 0);
+													font-size: 15px;
+													font-weight: 700;
+													font-family: Montserrat, sans-serif;
+													text-transform: none;
+												"
+												id="ui-id-24"
+												>Plan <br />de alimentación</a
+											>
+										</li>
+										<li class="propClone">
+											<a
+												class="inner-link active"
+												href="distribuidores.html"
+												style="
+													color: rgb(255, 255, 255);
+													background-color: rgba(0, 0, 0, 0);
+													border-color: rgb(255, 255, 255) rgb(255, 255, 255)
+														rgba(0, 0, 0, 0);
+													font-size: 15px;
+													font-weight: 700;
+													font-family: Montserrat, sans-serif;
+													text-transform: none;
+												"
+												id="ui-id-25"
+												>Conviértete <br />en distribuidor</a
+											>
+										</li>
+										<li class="propClone sm-no-border">
+											<a
+												class="inner-link"
+												href="contacto.html"
+												style="
+													color: rgb(255, 255, 255);
+													background-color: rgba(0, 0, 0, 0);
+													border-color: rgb(255, 255, 255) rgb(255, 255, 255)
+														rgba(0, 0, 0, 0);
+													font-family: Montserrat, sans-serif;
+													text-transform: none;
+													font-size: 15px !important;
+													font-weight: 700 !important;
+												"
+												id="ui-id-26"
+												>Contacto</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<!-- end nav -->
+			</header>
+			<style>
+				.one-fourth-screen {
+					height: 1230px;
+				}
+			</style>
+			<section class="padding-80px-tb xs-padding-60px-tb bg-white builder-bg" id="content-section7" style="margin-top: 0; padding: 80px 0px;border-color: rgb(112, 112, 112) rgb(112, 112, 112) rgb(236, 236, 236);background: url('images/uploads/fondo_distribuidor3.jpg') 0% 0% / cover; overflow: hidden;">
+				<div class="container one-fourth-screen position-relative">
+					<div class="row">
+						<div class="slider-typography xs-position-static text-center">
+							<div class="slider-text-middle-main">
+								<div class="slider-text-bottom text-center">
+									<!-- slider text -->
+									<div
+										class="col-lg-9 col-md-8 col-sm-12 col-xs-12 center-col margin-twenty-eight-top md-margin-twenty-top"
+									>
+										<h1
+											class="title-extra-large-3 md-title-extra-large-2 line-height-65 sm-title-extra-large xs-title-extra-large text-white alt-font margin-three-bottom tz-text"
+										>
+											ÚNETE A LOS CAMPEONES
+										</h1>
+										<div
+											class="text-white text-extra-large xs-text-extra-large width-90 margin-ten-bottom tz-text margin-lr-auto"
+										>
+											<p>
+												Únete a nuestra red de distribuidores y lleva nuestros
+												productos de alta calidad a más criadores de gallos.
+												Completa el formulario para más información.
+											</p>
+										</div>
+									</div>
+									<!-- end slider -->
+									<!-- image -->
+									<div
+										class="col-lg-10 col-md-8 col-sm-12 col-xs-12 center-col margin-ten-top"
+									>
+										<img
+											class="img100"
+											src="images/uploads/gallero2.png"
+											data-img-size="(W)1161px X (H)779px"
+											alt=""
+											id="ui-id-10"
+											style="
+												border-radius: 0px;
+												border-color: rgb(112, 112, 112);
+												border-style: none;
+												border-width: 1px !important;
+											"
+										/>
+									</div>
+									<!-- end image -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section
+				class="padding-110px-tb bg-dark-blue footer-top builder-bg xs-padding-60px-tb border-none"
+				id="callto-action6"
+				style="
+					background-color: rgb(0, 0, 0);
+					padding: 110px 0px;
+					border-color: rgb(0, 0, 0) !important;
+				"
+			>
+				<div class="container">
+					<div class="row">
+						<!-- section title -->
+						<div
+							class="col-md-12 col-sm-12 col-xs-12 margin-two-bottom text-center xs-margin-fifteen-bottom"
+						>
+							<h2
+								class="text-white alt-font center-col title-extra-large sm-title-medium text-center tz-text"
+								id="ui-id-16"
+								style="
+									color: rgb(255, 255, 255);
+									background-color: rgba(0, 0, 0, 0);
+									font-weight: 500;
+									font-family: Montserrat, sans-serif;
+									text-transform: none;
+									border-radius: 0px;
+									font-size: 30px !important;
+								"
+							>
+								Regístrate ahora y comienza a distribuir <br />
+								el alimento que impulsa a los campeones.
+							</h2>
+						</div>
+						<!-- end section title -->
+						<!-- button -->
+						<!-- <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+							<a
+								class="btn-large btn-circle btn text-dark-blue font-weight-500 bg-light-green btn-3d"
+								href="#"
+								id="ui-id-15"
+								style="
+									color: rgb(44, 53, 63);
+									border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)
+										rgba(0, 0, 0, 0.2);
+									font-size: 14px;
+									font-weight: 500;
+									font-family: Montserrat, sans-serif;
+									text-transform: none;
+									background-color: rgb(241, 194, 50) !important;
+									border-radius: 5px !important;
+								"
+								><span class="tz-text">QUIERO REGISTRARME</span
+								><i
+									class="fa fa-long-arrow-right icon-extra-small tz-icon-color"
+								></i
+							></a>
+						</div> -->
+
+						<!-- end button -->
+					</div>
+				</div>
+			</section>
+			<section
+				style="
+					background-color: rgb(0, 0, 0);
+					border-color: rgb(0, 0, 0) !important;
+				"
+			>
+				<style>
+					.form-container {
+						max-width: 800px;
+						background-color: white;
+						padding: 30px;
+						border-radius: 8px;
+						box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+					}
+					.form-check-label {
+						margin-left: 10px;
+					}
+					.form-check-input,
+					checkbox {
+						width: initial !important;
+					}
+				</style>
+				<div
+					class="container d-flex justify-content-center"
+					style="max-width: 600px"
+				>
+					<div class="form-container">
+						<h4 class="text-center mb-10">
+							Formulario de Solicitud para Distribuidores
+						</h4>
+						<br /><br />
+						<form>
+							<!-- Nombre Completo -->
+							<div class="mb-3">
+								<label for="nombreCompleto" class="form-label">Nombre completo:</label>
+								<input
+									type="text"
+									class="form-control"
+									id="nombreCompleto"
+									placeholder="Escribe tu nombre completo"
+									required
+								/>
+							</div>
+				
+							<!-- Email -->
+							<div class="mb-3">
+								<label for="email" class="form-label">Email:</label>
+								<input
+									type="email"
+									class="form-control"
+									id="email"
+									placeholder="example@email.com"
+									required
+								/>
+							</div>
+				
+							<!-- Teléfono -->
+							<div class="mb-3">
+								<label for="telefono" class="form-label">Teléfono (incluye LADA):</label>
+								<input
+									type="tel"
+									class="form-control"
+									id="telefono"
+									placeholder="555-1234-5678"
+									required
+								/>
+							</div>
+				
+							<!-- Nombre del Negocio -->
+							<div class="mb-3">
+								<label for="nombreNegocio" class="form-label">Nombre del negocio:</label>
+								<input
+									type="text"
+									class="form-control"
+									id="nombreNegocio"
+									placeholder="Escribe el nombre de tu negocio"
+									required
+								/>
+							</div>
+				
+							<!-- Enlace de Google Maps -->
+							<div class="mb-3">
+								<label for="googleMaps" class="form-label">*Enlace de Google Maps:</label>
+								<input
+									type="url"
+									class="form-control"
+									id="googleMaps"
+									placeholder="Ingresa el enlace de tu ubicación en Google Maps"
+									required
+								/>
+							</div>
+				
+							<!-- Marcas manejadas -->
+							<div class="mb-3">
+								<label for="marcasManejadas" class="form-label">Marcas que actualmente maneja en su punto de venta:</label>
+								<textarea
+									class="form-control"
+									id="marcasManejadas"
+									rows="2"
+									placeholder="Escribe las marcas que manejas"
+								></textarea>
+							</div>
+				
+							<!-- Distribuidor directo -->
+							<div class="mb-3">
+								<label for="distribuidorDirecto" class="form-label">¿Es distribuidor directo de estas marcas? Especificar la marca:</label>
+								<textarea
+									class="form-control"
+									id="distribuidorDirecto"
+									rows="2"
+									placeholder="Indica si eres distribuidor directo y cuáles marcas"
+								></textarea>
+							</div>
+				
+							<!-- Volumen de compra mensual -->
+							<div class="mb-3">
+								<label for="volumenCompra" class="form-label">Volumen de compra mensual:</label>
+								<input
+									type="text"
+									class="form-control"
+									id="volumenCompra"
+									placeholder="Ejemplo: 10 toneladas"
+								/>
+							</div>
+				
+							<!-- Dirección completa -->
+							<div class="mb-3">
+								<label for="direccionCompleta" class="form-label">Dirección completa:</label>
+								<textarea
+									class="form-control"
+									id="direccionCompleta"
+									rows="3"
+									placeholder="Escribe la dirección completa del negocio"
+								></textarea>
+							</div>
+							
+
+							<!-- Botón de Enviar -->
+							<div class="mb-3 text-center">
+								<button type="submit" class="btn btn-primary">
+									Enviar Solicitud
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+			<footer
+				id="footer-section2"
+				class="bg-dark-blue cover-background builder-bg tz-builder-bg-image padding-60px-tb xs-padding-40px-tb"
+				data-img-size="(W)1920px X (H)525px"
+				style="background: black"
+			>
+				<div class="container">
+					<div class="row">
+						<!-- <div class="col-md-12 text-center">
+							<a href="index.html" class="inner-link"
+								><img
+									src="images/uploads/logo_v3.png"
+									data-img-size="(W)250px X (H)61px"
+									alt=""
+									class="margin-seven-bottom sm-margin-five-bottom xs-margin-nine-bottom"
+									style="
+										border-radius: 0px;
+										border-color: rgb(78, 78, 78);
+										border-style: none;
+										border-width: 1px !important;
+										max-height: 200px;
+									"
+									id="ui-id-12"
+							/></a>
+						</div> -->
+						<div class="col-md-12 text-center border-top-light tz-border">
+							<!-- social elements -->
+							<div
+								class="padding-eight-top margin-two-bottom text-small alt-font display-block"
+							>
+								<a
+									class="text-white margin-four-right tz-text"
+									href="index.html"
+									style="
+										color: rgb(255, 255, 255);
+										background-color: rgba(0, 0, 0, 0);
+										font-size: 12px;
+										font-weight: 400;
+										font-family: Montserrat, sans-serif;
+										text-transform: none;
+										border-radius: 0px;
+									"
+									id="ui-id-26"
+									>INICIO</a
+								>
+								<a
+									class="text-white margin-four-right tz-text"
+									href="alimentos.html"
+									style="
+										color: rgb(255, 255, 255);
+										background-color: rgba(0, 0, 0, 0);
+										font-size: 12px;
+										font-weight: 400;
+										font-family: Montserrat, sans-serif;
+										text-transform: none;
+										border-radius: 0px;
+									"
+									id="ui-id-27"
+									>ALIMENTOS</a
+								>
+								<a
+									class="text-white margin-four-right tz-text"
+									href="tecnologia.html"
+									style="
+										color: rgb(255, 255, 255);
+										background-color: rgba(0, 0, 0, 0);
+										font-size: 12px;
+										font-weight: 400;
+										font-family: Montserrat, sans-serif;
+										text-transform: none;
+										border-radius: 0px;
+									"
+									id="ui-id-28"
+									>ACERCA DE</a
+								>
+								<a
+									class="text-white margin-four-right tz-text"
+									href="plan.html"
+									style="
+										color: rgb(255, 255, 255);
+										background-color: rgba(0, 0, 0, 0);
+										font-size: 12px;
+										font-weight: 400;
+										font-family: Montserrat, sans-serif;
+										text-transform: none;
+										border-radius: 0px;
+									"
+									id="ui-id-29"
+									>PLAN DE ALIMENTACIÓN</a
+								>
+								<a
+									class="text-white tz-text"
+									href="contacto.html"
+									style="
+										color: rgb(255, 255, 255);
+										background-color: rgba(0, 0, 0, 0);
+										font-size: 12px;
+										font-weight: 400;
+										font-family: Montserrat, sans-serif;
+										text-transform: none;
+										border-radius: 0px;
+									"
+									id="ui-id-30"
+									>CONTACTO</a
+								>
+							</div>
+							<!-- end social elements -->
+							<!-- footer caption -->
+							<span class="text-light-gray text-extra-small tz-text alt-font"
+								>© 2024 VIMIFOS</span
+							>
+							<!-- end footer caption -->
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<!-- /#page -->
+
+		<!-- javascript libraries -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.appear.js"></script>
+		<script type="text/javascript" src="js/smooth-scroll.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<!-- wow animation -->
+		<script type="text/javascript" src="js/wow.min.js"></script>
+		<!-- owl carousel -->
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		<!-- images loaded -->
+		<script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+		<!-- isotope -->
+		<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+		<!-- magnific popup -->
+		<script
+			type="text/javascript"
+			src="js/jquery.magnific-popup.min.js"
+		></script>
+		<!-- navigation -->
+		<script type="text/javascript" src="js/jquery.nav.js"></script>
+		<!-- equalize -->
+		<script type="text/javascript" src="js/equalize.min.js"></script>
+		<!-- fit videos -->
+		<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+		<!-- number counter -->
+		<script type="text/javascript" src="js/jquery.countTo.js"></script>
+		<!-- time counter  -->
+		<script type="text/javascript" src="js/counter.js"></script>
+		<!-- twitter Fetcher  -->
+		<script type="text/javascript" src="js/twitterFetcher_min.js"></script>
+		<!-- main -->
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<script>
+			// Initialize the Google Map
+			let map;
+			let markers = [];
+			let distributorsData = [];
+
+			function initMap() {
+				map = new google.maps.Map(document.getElementById("map"), {
+					center: { lat: 19.432608, lng: -99.133209 }, // Centered in Mexico City
+					zoom: 5
+				});
+			}
+
+			// Fetch distributors and add to the map
+			fetch("distribuidores.php")
+				.then((response) => response.json())
+				.then((data) => {
+					distributorsData = data;
+					displayDistributorsList();
+					addMarkersToMap();
+				});
+
+			// Display distributor list on the page
+			function displayDistributorsList() {
+				const listElement = document.getElementById("distributorsList");
+				listElement.innerHTML = ""; // Clear existing list
+
+				distributorsData.forEach((distributor) => {
+					const listItem = document.createElement("div");
+					listItem.innerHTML = `<a style="color:white;" onclick="showDistributorInfo('${distributor["ID cliente"]}')">${distributor["Nombre del Cliente"]}</a><br>`;
+					listElement.appendChild(listItem);
+				});
+			}
+
+			// Add markers to map for each distributor
+			function addMarkersToMap() {
+				distributorsData.forEach((distributor) => {
+					if (distributor["Latitud"] && distributor["Longitud"]) {
+						const marker = new google.maps.Marker({
+							position: {
+								lat: parseFloat(distributor["Latitud"]),
+								lng: parseFloat(distributor["Longitud"])
+							},
+							map: map,
+							title: distributor["Nombre del Cliente"]
+						});
+
+						markers.push(marker);
+					}
+				});
+			}
+
+			let infowindow;
+
+			function showDistributorInfo(id) {
+				const distributor = distributorsData.find((d) => d["ID cliente"] == id);
+				if (distributor) {
+					// Create a new info window if it doesn't exist yet
+					if (!infowindow) {
+						infowindow = new google.maps.InfoWindow();
+					}
+
+					// Set the content of the info window with distributor details
+					const content = `
+            <h3>${distributor["Nombre del Cliente"]}</h3>
+            <p><strong>Dirección:</strong> ${distributor["Dirección"]}, ${distributor["Colonia"]}, ${distributor["Ciudad"]}</p>
+            <p><strong>Teléfono:</strong> ${distributor["Telefono"]}</p>
+            <p><strong>Correo Electrónico:</strong> ${distributor["Correo Electronico"]}</p>
+        `;
+					// Find the corresponding marker
+					const marker = markers.find(
+						(m) => m.title === distributor["Nombre del Cliente"]
+					);
+
+					// Open the info window at the marker's position
+					if (marker) {
+						infowindow.setContent(content);
+						infowindow.open(map, marker);
+					}
+				}
+			}
+		</script>
+	</body>
+</html>
