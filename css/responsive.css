@@ -2526,19 +2526,20 @@
     .header-style14 .social a, .header-style15 .social a{margin-left: 0px;}
     .one-fifth-screen {height:450px;}
     .xs-one-sixth-screen {min-height:500px;}
+    .one-fourth-screen {height: 500px !important;}  
 }
 
 @media (max-width: 380px) {
     /* header */
     .header-style13 .social a{margin:0 0 0 6px; }
     .header-style14 .social a, .header-style15 .social a{margin:0 0 0 6px; }
-    .one-fourth-screen {height: 470px !important;}  
+    .one-fourth-screen {height: 455px !important;}  
 
 }
 @media screen and (max-width: 320px) {
      /*  navigation  */
     .shrink-nav .navbar-collapse { max-height: 420px; }
-    .one-fourth-screen {height: 460px !important;}  
+    .one-fourth-screen {height: 445px !important;}  
 }
 
 @media screen and  (orientation : landscape) {
