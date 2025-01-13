@@ -2472,7 +2472,7 @@
 
     .iframe-plan{height: 500px; margin-top: 2rem;}
     .xs-padding-60px-tb{padding-top: 170px !important;}
-    .one-fourth-screen {height: 475px !important;}    
+    .one-fourth-screen {height: 510px !important;}    
     .d-flex{display: flex; justify-content: center; align-items: center;}
     .title-contact{font-size: 38px !important;}
     /* slider */
@@ -2532,11 +2532,13 @@
     /* header */
     .header-style13 .social a{margin:0 0 0 6px; }
     .header-style14 .social a, .header-style15 .social a{margin:0 0 0 6px; }
+    .one-fourth-screen {height: 470px !important;}  
 
 }
 @media screen and (max-width: 320px) {
      /*  navigation  */
     .shrink-nav .navbar-collapse { max-height: 420px; }
+    .one-fourth-screen {height: 460px !important;}  
 }
 
 @media screen and  (orientation : landscape) {
